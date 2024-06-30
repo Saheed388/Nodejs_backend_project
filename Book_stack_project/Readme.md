@@ -1,0 +1,1 @@
+quran https://api.alquran.cloud/v1//quran/en.asad

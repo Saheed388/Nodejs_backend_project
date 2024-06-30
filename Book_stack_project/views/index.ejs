@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Book Search</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Titan+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <div class="book_container"> 
+        <div class="background-image">
+            <h1>Book Store</h1>
+            <h3 class="typing-animation"> Search Books Title and Retrieve Description </h3>
+
+            <form id="myForm" method="post" action="/search">
+                <div class="formContainer">
+                    <label for="submit"></label>
+                    <input type="text" name="search" id="search" placeholder="Search">
+                    <button> OK</button>
+                </div>
+            </form>
+            <div class="output-container">
+            <% if (data === "No book found") { %>
+                <p class="noBook">OPPs!!  Book not found</p>
+            <% } else if (data) { %>
+                <div class="loadResult">
+                    <h2>Book Details</h2>
+                    <p>Title: <%= data.title %></p>
+                    <p>Author: <%= data.author %></p>
+                    <p>Author Birth Year: <%= data.birth_year %></p>
+                    <p>Author Death Year: <%= data.death_year %></p>
+                    <p>Language: <%= data.language %></p>
+                    <p>Downloads: <%= data.downloads %></p>
+                </div>
+            <% } %>
+        </div>
+        </div>
+    </div>
+</body>
+</html>

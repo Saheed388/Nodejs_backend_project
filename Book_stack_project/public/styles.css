@@ -1,0 +1,192 @@
+@media (max-width: 600px) {
+
+    body::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("./Capture.PNG");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.5; /* Adjust this value to control transparency */
+        z-index: -1; /* Ensure the background is behind the content */
+        height: 100vh;
+    }
+    
+    .book_container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background: url("./Capture.PNG"); */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.5; /* Adjust this value to control transparency */
+        z-index: -1; /* Ensure the background is behind the content */
+    }
+    
+    .background-image h1 {
+        color: white; /* Set the text color to white */
+        -webkit-text-stroke: 2px #01204E; /* Add a navy blue stroke */
+        display: flex;
+        justify-content: center;
+        font-size: 60px;
+        margin-top: 100px;
+    }
+    
+    
+    .background-image h3{
+        color: #01204E;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        margin-top: 100px;
+
+
+    } 
+
+    .formContainer input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: flex-start;
+        margin-top: 200px;
+        margin-left: 20px;
+    }
+
+    .formContainer input {
+        width: 300px;
+        height: 40px;
+        border-radius: 10px;
+        border: solid 3px #D9D9D9;
+    }
+
+    .formContainer button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: flex-start;
+        margin-top: 20px;
+        margin-left: 150px;
+        padding: 20px;
+        border-radius: 40px;
+        border: solid 3px #D9D9D9;
+        background: #01204E;
+        color: #D9D9D9;
+    }
+
+    .output-container {
+        display: flex;
+        justify-content: center;
+        background-color: #D9D9D9;
+    }
+}
+
+@media (min-width: 601px) {
+
+    body::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url("./Capture.PNG");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.5; /* Adjust this value to control transparency */
+        z-index: -1; /* Ensure the background is behind the content */
+        height: 100vh;
+    }
+    
+    .book_container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        /* background: url("./Capture.PNG"); */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        opacity: 0.5; /* Adjust this value to control transparency */
+        z-index: -1; /* Ensure the background is behind the content */
+        height: 100vh;
+    }
+    
+    .background-image h1 {
+        color: white; /* Set the text color to white */
+        -webkit-text-stroke: 2px #01204E; /* Add a navy blue stroke */
+        display: flex;
+        justify-content: center;
+        font-size: 100px;
+        margin-top: 100px;
+    }
+    
+    .background-image h3 {
+        color: #01204E;
+        text-align: center;
+        margin: 0 auto; /* Center the element horizontally */
+        margin-top: 100px;
+        font-size: 50px;
+        overflow: hidden; /* Ensure the text doesn't overflow */
+        border-right: 0.15em solid #01204E; /* Create a cursor effect */
+        white-space: nowrap; /* Ensure text doesn't wrap */
+        animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+        animation-fill-mode: forwards; /* Ensure the final state is retained */
+    }
+    
+    @keyframes typing {
+        from { width: 0; }
+        to { width: 100%; }
+    }
+    
+    @keyframes blink-caret {
+        from, to { border-color: transparent; }
+        50% { border-color: transparent; }
+    }
+    
+    .formContainer input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: flex-start;
+        margin-top: 100px;
+        margin-left: 300px;
+    }
+
+    .formContainer input {
+        width: 600px;
+        height: 40px;
+        border-radius: 10px;
+        border: solid 3px #D9D9D9;
+    }
+
+    .formContainer button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        justify-items: flex-start;
+        margin-top: -50px;
+        margin-left: 910px;
+        padding: 15px;
+        border-radius: 40px;
+        border: solid 3px #D9D9D9;
+        background: #01204E;
+        color: #D9D9D9;
+    }
+
+    .output-container {
+        display: flex;
+        justify-content: center;
+        background-color: #D9D9D9;
+    }
+}
